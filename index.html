@@ -570,8 +570,31 @@
       </div>
     </div>
     <div class="card reveal">
-      <div class="card-ph">🍫</div>
-      <div class="card-body">
+      <div class="card-ph">
+       <div class="slider-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; border-radius: 8px;">
+        <style>
+            @keyframes matildaSlide {
+                0% { opacity: 1; }
+                45% { opacity: 1; }
+                55% { opacity: 0; }
+                95% { opacity: 0; }
+                100% { opacity: 1; }
+            }
+            .slide-img-matilda {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: opacity 1s ease-in-out;
+            }
+            .matilda-img1 { animation: matildaSlide 6s infinite; }
+            .matilda-img2 { animation: matildaSlide 6s infinite reverse; }
+        </style>
+        <img src="ماتيلدا بدون فرواله.jpeg" class="slide-img-matilda matilda-img1" alt="ماتيلدا بدون فراولة">
+        <img src="ماتيلدا فراوله.jpeg" class="slide-img-matilda matilda-img2" alt="ماتيلدا فراولة">
+       </div>
+       </div>
+       <div class="card-body">
         <div class="card-name">ماتيلدا كيك</div>
         <div class="card-divider"></div>
         <div class="price-row"><span class="price-val">15,000 <span class="price-unit">دع</span></span><span class="price-label">حجم وسط</span></div>
