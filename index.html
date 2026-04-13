@@ -595,7 +595,30 @@
       </div>
     </div>
     <div class="card reveal">
-      <div class="card-ph">🍓</div>
+      <div class="card-ph">
+       <div class="slider-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; border-radius: 8px;">
+        <style>
+            @keyframes nySlide {
+                0% { opacity: 1; }
+                45% { opacity: 1; }
+                55% { opacity: 0; }
+                95% { opacity: 0; }
+                100% { opacity: 1; }
+            }
+            .slide-img-ny {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: opacity 1s ease-in-out;
+            }
+            .ny-img1 { animation: nySlide 6s infinite; }
+            .ny-img2 { animation: nySlide 6s infinite reverse; }
+        </style>
+        <img src="نيورك تشيز كيك.jpeg" class="slide-img-ny ny-img1" alt="نيويورك تشيز كيك">
+        <img src="نيو.jpeg" class="slide-img-ny ny-img2" alt="نيويورك تشيز كيك - لقطة ثانية">
+      </div>
+    </div>
       <div class="card-body">
         <div class="card-name">نيويورك تشيز كيك</div>
         <div class="card-divider"></div>
