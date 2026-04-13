@@ -649,7 +649,29 @@
   <div class="grid">
     <div class="card reveal">
       <div class="card-ph">
-       <img src="كاسترد بالمنكا.jpeg" alt="كاسترد بالمنكا" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+       <div class="slider-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; border-radius: 8px;">
+        <style>
+            @keyframes custardTripleSlide {
+                0%, 30% { opacity: 1; }
+                33%, 97% { opacity: 0; }
+                100% { opacity: 1; }
+            }
+            .slide-img-custard {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                opacity: 0;
+                animation: custardTripleSlide 9s infinite;
+            }
+            .c-img1 { animation-delay: 0s; opacity: 1; }
+            .c-img2 { animation-delay: 3s; }
+            .c-img3 { animation-delay: 6s; }
+        </style>
+        <img src="كاسترد فراوله وبستاشيو كبير.jpeg" class="slide-img-custard c-img1" alt="كاسترد فراولة وبستاشيو">
+        <img src="كاسترد كبير منكا .jpeg" class="slide-img-custard c-img2" alt="كاسترد منكا">
+        <img src="كيك كاسترد كبير ككو وفراوله.jpeg" class="slide-img-custard c-img3" alt="كيك كاسترد ككو وفراولة">
+       </div>
        </div>
        <div class="card-body">
         <div class="card-name">كيك الكاسترد</div>
