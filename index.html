@@ -403,7 +403,30 @@
   </div>
   <div class="grid">
     <div class="card reveal">
-      <div class="card-ph">🍪</div>
+      <div class="card-ph">
+       <div class="slider-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; border-radius: 8px;">
+        <style>
+            @keyframes cookiesSlide {
+                0% { opacity: 1; }
+                45% { opacity: 1; }
+                55% { opacity: 0; }
+                95% { opacity: 0; }
+                100% { opacity: 1; }
+            }
+            .slide-img-cookies {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: opacity 1s ease-in-out;
+            }
+            .cookies-img1 { animation: cookiesSlide 6s infinite; }
+            .cookies-img2 { animation: cookiesSlide 6s infinite reverse; }
+        </style>
+        <img src="كوكيز.jpeg" class="slide-img-cookies cookies-img1" alt="كوكيز">
+        <img src="كوكيز اسود.jpeg" class="slide-img-cookies cookies-img2" alt="كوكيز اسود">
+      </div>
+      </div>
       <div class="card-body">
         <div class="card-name">كوكيز محشي نوتيلا</div>
         <div class="card-tags">
