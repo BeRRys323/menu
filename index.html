@@ -1047,7 +1047,30 @@
   <div class="grid" style="grid-template-columns:1fr;">
     <div class="card reveal">
       <div class="card-badge">مناسبات وأعراس</div>
-      <div class="card-ph" style="height:260px;font-size:64px;">🍓</div>
+      <div class="card-ph">
+       <div class="slider-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; border-radius: 8px;">
+        <style>
+            @keyframes italianSlide {
+                0% { opacity: 1; }
+                45% { opacity: 1; }
+                55% { opacity: 0; }
+                95% { opacity: 0; }
+                100% { opacity: 1; }
+            }
+            .slide-img-italian {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: opacity 1s ease-in-out;
+            }
+            .italian-img1 { animation: italianSlide 6s infinite; }
+            .italian-img2 { animation: italianSlide 6s infinite reverse; }
+        </style>
+        <img src="ايطاليه.jpeg" class="slide-img-italian italian-img1" alt="حلويات إيطالية">
+        <img src="ايطاليه٢.jpeg" class="slide-img-italian italian-img2" alt="حلويات إيطالية ٢">
+      </div>
+      </div>
       <div class="card-body">
         <div class="card-name">الكيكة الإيطالية — كيك المناسبات</div>
         <div style="font-size:13px;color:var(--text-muted);margin-bottom:14px;text-align:right;">متوفرة من 40 سم لـ 100 سم</div>
