@@ -445,7 +445,30 @@
     </div>
     <div class="card reveal">
       <div class="card-badge">بلجيكي</div>
-      <div class="card-ph">🍪</div>
+      <div class="card-ph">
+       <div class="slider-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; border-radius: 8px;">
+        <style>
+            @keyframes cookiesSlide {
+                0% { opacity: 1; }
+                45% { opacity: 1; }
+                55% { opacity: 0; }
+                95% { opacity: 0; }
+                100% { opacity: 1; }
+            }
+            .slide-img-cookies {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: opacity 1s ease-in-out;
+            }
+            .cookies-img1 { animation: cookiesSlide 6s infinite; }
+            .cookies-img2 { animation: cookiesSlide 6s infinite reverse; }
+        </style>
+        <img src="كوكيز بصوص.jpeg" class="slide-img-cookies cookies-img1" alt="كوكيز بصوص">
+        <img src="كوكيز كندر.png" class="slide-img-cookies cookies-img2" alt="كوكيز كندر">
+      </div>
+      </div>
       <div class="card-body">
         <div class="card-name">كوكيز بلجيكي</div>
         <div class="card-tags">
