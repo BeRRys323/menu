@@ -1126,7 +1126,35 @@ box-shadow: 0 20px 80px rgba(0,0,0,0.5), 0 0 0 2px rgba(184,152,58,0.5) !importa
 <div class="card reveal" style="border:2px solid rgba(184,152,58,0.6);">
   <div style="background:linear-gradient(135deg,#4A4A2A,#3D3D1E);padding:32px 20px;text-align:center;position:relative;">
     <div style="position:absolute;top:14px;right:14px;background:var(--gold);color:var(--dark);font-size:10px;font-weight:700;padding:4px 12px;border-radius:20px;">⭐ الأكثر طلباً</div>
-    <div style="font-size:44px;margin-bottom:10px;">🎊</div>
+    <div class="card-ph">
+    <div class="slider-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; border-radius: 8px;">
+        <style>
+            @keyframes candyMultiSlide {
+                0%, 16% { opacity: 1; }
+                20%, 96% { opacity: 0; }
+                100% { opacity: 1; }
+            }
+            .slide-img-candy {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                opacity: 0;
+                animation: candyMultiSlide 15s infinite;
+            }
+            .candy-img1 { animation-delay: 0s; opacity: 1; }
+            .candy-img2 { animation-delay: 3s; }
+            .candy-img3 { animation-delay: 6s; }
+            .candy-img4 { animation-delay: 9s; }
+            .candy-img5 { animation-delay: 12s; }
+        </style>
+        <img src="Candy.jpeg" class="slide-img-candy candy-img1" alt="كاندي بار 1">
+        <img src="كاندي بار.jpeg" class="slide-img-candy candy-img2" alt="كاندي بار 2">
+        <img src="كاندي بار٤.jpeg" class="slide-img-candy candy-img3" alt="كاندي بار 3">
+        <img src="كاندي بار٥٥.jpeg" class="slide-img-candy candy-img4" alt="كاندي بار 4">
+        <img src="كاندي بار٢.jpeg" class="slide-img-candy candy-img5" alt="كاندي بار 5">
+    </div>
+</div>
     <div style="font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--gold-light);font-style:italic;">كاندي بار</div>
     <div style="font-size:20px;font-weight:700;color:var(--cream);margin-top:6px;">50 شخص</div>
   </div>
