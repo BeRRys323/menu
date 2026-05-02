@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
@@ -28,288 +29,317 @@
     overflow-x: hidden;
   }
 
-  /* HERO */
-  .hero {
-    min-height:100vh;
-    display:flex; flex-direction:column;
-    align-items:center; justify-content:center;
-    position:relative; overflow:hidden;
-    background: radial-gradient(ellipse 80% 60% at 50% 0%, #3a3820 0%, transparent 70%),
-                radial-gradient(ellipse 60% 40% at 80% 100%, #2a2a10 0%, transparent 60%),
-                var(--dark);
-    padding:60px 20px 80px;
-  }
-  .hero-ornament {
-    position:absolute; width:700px; height:700px;
-    border:1px solid rgba(184,152,58,0.07); border-radius:50%;
-    top:50%; left:50%; transform:translate(-50%,-50%);
-    animation:rotate 60s linear infinite;
-  }
-  .hero-ornament::before {
-    content:''; position:absolute; inset:40px;
-    border:1px solid rgba(184,152,58,0.05); border-radius:50%;
-  }
-  @keyframes rotate { to { transform:translate(-50%,-50%) rotate(360deg); } }
+/* HERO */
+.hero {
+min-height:100vh;
+display:flex; flex-direction:column;
+align-items:center; justify-content:center;
+position:relative; overflow:hidden;
+background: radial-gradient(ellipse 80% 60% at 50% 0%, #3a3820 0%, transparent 70%),
+radial-gradient(ellipse 60% 40% at 80% 100%, #2a2a10 0%, transparent 60%),
+var(–dark);
+padding:60px 20px 80px;
+}
+.hero-ornament {
+position:absolute; width:700px; height:700px;
+border:1px solid rgba(184,152,58,0.07); border-radius:50%;
+top:50%; left:50%; transform:translate(-50%,-50%);
+animation:rotate 60s linear infinite;
+}
+.hero-ornament::before {
+content:’’; position:absolute; inset:40px;
+border:1px solid rgba(184,152,58,0.05); border-radius:50%;
+}
+@keyframes rotate { to { transform:translate(-50%,-50%) rotate(360deg); } }
 
-  .logo-circle {
-    width:200px; height:200px;
-    background:radial-gradient(circle at 40% 35%, #F5F0E8, #E0D8C0);
-    border-radius:50%;
-    display:flex; flex-direction:column;
-    align-items:center; justify-content:center;
-    box-shadow:0 20px 80px rgba(0,0,0,0.5),0 0 0 1px rgba(184,152,58,0.3);
-    margin-bottom:40px;
-    animation:fadeUp 1s ease both;
-    position:relative; z-index:2;
-  }
-  .logo-circle .brand {
-    font-family:'Cormorant Garamond',serif;
-    font-size:38px; font-style:italic;
-    color:var(--olive-mid); line-height:1;
-  }
-  .logo-circle .tagline-en {
-    font-family:'Cormorant Garamond',serif;
-    font-size:11px; letter-spacing:3px;
-    color:var(--text-muted); margin-top:4px;
-  }
-  .hero-title {
-    font-family:'Cormorant Garamond',serif;
-    font-size:clamp(18px,5vw,28px); font-weight:300;
-    color:var(--gold-pale); text-align:center;
-    animation:fadeUp 1s 0.2s ease both;
-    position:relative; z-index:2;
-  }
-  .hero-sub {
-    font-size:14px; color:var(--text-muted);
-    margin-top:8px; letter-spacing:2px; text-align:center;
-    animation:fadeUp 1s 0.3s ease both; position:relative; z-index:2;
-  }
-  .hero-divider {
-    width:80px; height:1px;
-    background:linear-gradient(90deg,transparent,var(--gold),transparent);
-    margin:24px auto;
-    animation:fadeUp 1s 0.4s ease both; position:relative; z-index:2;
-  }
-  .hero-pills {
-    display:flex; gap:12px; flex-wrap:wrap; justify-content:center;
-    animation:fadeUp 1s 0.5s ease both; position:relative; z-index:2;
-  }
-  .hero-pill {
-    padding:8px 16px;
-    background:rgba(184,152,58,0.1);
-    border:1px solid var(--border);
-    border-radius:40px; font-size:13px; color:var(--gold-light);
-  }
+.logo-circle {
+width:200px; height:200px;
+background:radial-gradient(circle at 40% 35%, #F5F0E8, #E0D8C0);
+border-radius:50%;
+display:flex; flex-direction:column;
+align-items:center; justify-content:center;
+box-shadow:0 20px 80px rgba(0,0,0,0.5),0 0 0 1px rgba(184,152,58,0.3);
+margin-bottom:40px;
+animation:fadeUp 1s ease both;
+position:relative; z-index:2;
+}
+.logo-circle .brand {
+font-family:‘Cormorant Garamond’,serif;
+font-size:38px; font-style:italic;
+color:var(–olive-mid); line-height:1;
+}
+.logo-circle .tagline-en {
+font-family:‘Cormorant Garamond’,serif;
+font-size:11px; letter-spacing:3px;
+color:var(–text-muted); margin-top:4px;
+}
+.hero-title {
+font-family:‘Cormorant Garamond’,serif;
+font-size:clamp(18px,5vw,28px); font-weight:300;
+color:var(–gold-pale); text-align:center;
+animation:fadeUp 1s 0.2s ease both;
+position:relative; z-index:2;
+}
+.hero-sub {
+font-size:14px; color:var(–text-muted);
+margin-top:8px; letter-spacing:2px; text-align:center;
+animation:fadeUp 1s 0.3s ease both; position:relative; z-index:2;
+}
+.hero-divider {
+width:80px; height:1px;
+background:linear-gradient(90deg,transparent,var(–gold),transparent);
+margin:24px auto;
+animation:fadeUp 1s 0.4s ease both; position:relative; z-index:2;
+}
+.hero-pills {
+display:flex; gap:12px; flex-wrap:wrap; justify-content:center;
+animation:fadeUp 1s 0.5s ease both; position:relative; z-index:2;
+}
+.hero-pill {
+padding:8px 16px;
+background:rgba(184,152,58,0.1);
+border:1px solid var(–border);
+border-radius:40px; font-size:13px; color:var(–gold-light);
+}
 
-  /* NAV */
-  .nav {
-    position:sticky; top:0; z-index:100;
-    background:rgba(37,35,24,0.93);
-    backdrop-filter:blur(20px);
-    border-bottom:1px solid var(--border);
-    padding:0 16px; overflow-x:auto; scrollbar-width:none;
-  }
-  .nav::-webkit-scrollbar { display:none; }
-  .nav-inner {
-    display:flex; gap:4px; padding:12px 0;
-    min-width:max-content; margin:0 auto;
-    max-width:900px; justify-content:center;
-  }
-  .nav-btn {
-    padding:7px 16px; border-radius:30px;
-    border:1px solid transparent; background:transparent;
-    color:var(--text-muted); font-family:'Tajawal',sans-serif;
-    font-size:13px; cursor:pointer; transition:all 0.2s; white-space:nowrap;
-  }
-  .nav-btn:hover, .nav-btn.active {
-    background:rgba(184,152,58,0.15);
-    border-color:var(--border); color:var(--gold-light);
-  }
+/* NAV */
+.nav {
+position:sticky; top:0; z-index:100;
+background:rgba(37,35,24,0.93);
+backdrop-filter:blur(20px);
+border-bottom:1px solid var(–border);
+padding:0 16px; overflow-x:auto; scrollbar-width:none;
+}
+.nav::-webkit-scrollbar { display:none; }
+.nav-inner {
+display:flex; gap:4px; padding:12px 0;
+min-width:max-content; margin:0 auto;
+max-width:900px; justify-content:center;
+}
+.nav-btn {
+padding:7px 16px; border-radius:30px;
+border:1px solid transparent; background:transparent;
+color:var(–text-muted); font-family:‘Tajawal’,sans-serif;
+font-size:13px; cursor:pointer; transition:all 0.2s; white-space:nowrap;
+}
+.nav-btn:hover, .nav-btn.active {
+background:rgba(184,152,58,0.15);
+border-color:var(–border); color:var(–gold-light);
+}
 
-  /* SECTION */
-  .section { padding:70px 16px 40px; max-width:900px; margin:0 auto; }
-  .section-header { text-align:center; margin-bottom:48px; }
-  .section-label {
-    font-size:11px; letter-spacing:4px; color:var(--gold);
-    font-family:'Cormorant Garamond',serif;
-  }
-  .section-title {
-    font-family:'Cormorant Garamond',serif;
-    font-size:clamp(28px,6vw,42px); font-weight:300;
-    color:var(--cream); margin-top:8px; line-height:1.2;
-  }
-  .section-line {
-    width:60px; height:1px;
-    background:linear-gradient(90deg,transparent,var(--gold),transparent);
-    margin:16px auto 0;
-  }
+/* SECTION */
+.section { padding:70px 16px 40px; max-width:900px; margin:0 auto; }
+.section-header { text-align:center; margin-bottom:48px; }
+.section-label {
+font-size:11px; letter-spacing:4px; color:var(–gold);
+font-family:‘Cormorant Garamond’,serif;
+}
+.section-title {
+font-family:‘Cormorant Garamond’,serif;
+font-size:clamp(28px,6vw,42px); font-weight:300;
+color:var(–cream); margin-top:8px; line-height:1.2;
+}
+.section-line {
+width:60px; height:1px;
+background:linear-gradient(90deg,transparent,var(–gold),transparent);
+margin:16px auto 0;
+}
 
-  /* GRID */
-  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(270px,1fr)); gap:20px; }
+/* GRID */
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(270px,1fr)); gap:20px; }
 
-  /* CARD */
-  .card {
-    background:var(--card-bg); border-radius:20px;
-    overflow:hidden; box-shadow:0 4px 30px rgba(0,0,0,0.25);
-    transition:transform 0.35s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.35s;
-    color:var(--dark); position:relative;
-  }
-  .card:hover {
-    transform:translateY(-6px);
-    box-shadow:0 16px 50px rgba(0,0,0,0.35),0 0 0 1px rgba(184,152,58,0.2);
-  }
-  .card-badge {
-    position:absolute; top:14px; left:14px;
-    background:rgba(37,35,24,0.85); backdrop-filter:blur(8px);
-    color:var(--gold-light); font-size:11px;
-    padding:4px 10px; border-radius:20px;
-    border:1px solid rgba(184,152,58,0.3); z-index:2;
-  }
-  .card-ph {
-    width:100%; height:220px;
-    display:flex; align-items:center; justify-content:center;
-    font-size:56px;
-    background:linear-gradient(135deg,#ede5d0,#d8cca8);
-  }
-  .card-body { padding:20px; }
-  .card-name {
-    font-size:18px; font-weight:700; color:var(--dark);
-    text-align:right; margin-bottom:12px;
-  }
-  .card-tags { display:flex; flex-wrap:wrap; gap:6px; justify-content:flex-end; margin-bottom:14px; }
-  .tag {
-    padding:4px 10px; border-radius:20px;
-    background:rgba(74,74,42,0.1); border:1px solid rgba(74,74,42,0.2);
-    font-size:12px; color:var(--olive-mid);
-  }
-  .card-divider { height:1px; background:rgba(184,152,58,0.15); margin:12px 0; }
-  .price-row {
-    display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px;
-  }
-  .price-label { font-size:13px; color:var(--text-muted); }
-  .price-val { font-size:16px; font-weight:700; color:var(--olive-mid); }
-  .price-unit { font-size:11px; color:var(--text-muted); margin-right:3px; }
+/* CARD */
+.card {
+background:var(–card-bg); border-radius:20px;
+overflow:hidden; box-shadow:0 4px 30px rgba(0,0,0,0.25);
+transition:transform 0.35s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.35s;
+color:var(–dark); position:relative;
+}
+.card:hover {
+transform:translateY(-6px);
+box-shadow:0 16px 50px rgba(0,0,0,0.35),0 0 0 1px rgba(184,152,58,0.2);
+}
+.card-badge {
+position:absolute; top:14px; left:14px;
+background:rgba(37,35,24,0.85); backdrop-filter:blur(8px);
+color:var(–gold-light); font-size:11px;
+padding:4px 10px; border-radius:20px;
+border:1px solid rgba(184,152,58,0.3); z-index:2;
+}
+.card-ph {
+width:100%; height:220px;
+display:flex; align-items:center; justify-content:center;
+font-size:56px;
+background:linear-gradient(135deg,#ede5d0,#d8cca8);
+}
+.card-body { padding:20px; }
+.card-name {
+font-size:18px; font-weight:700; color:var(–dark);
+text-align:right; margin-bottom:12px;
+}
+.card-tags { display:flex; flex-wrap:wrap; gap:6px; justify-content:flex-end; margin-bottom:14px; }
+.tag {
+padding:4px 10px; border-radius:20px;
+background:rgba(74,74,42,0.1); border:1px solid rgba(74,74,42,0.2);
+font-size:12px; color:var(–olive-mid);
+}
+.card-divider { height:1px; background:rgba(184,152,58,0.15); margin:12px 0; }
+.price-row {
+display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px;
+}
+.price-label { font-size:13px; color:var(–text-muted); }
+.price-val { font-size:16px; font-weight:700; color:var(–olive-mid); }
+.price-unit { font-size:11px; color:var(–text-muted); margin-right:3px; }
 
-  /* ORDER BUTTONS */
-  .order-btn {
-    display:block; width:100%; margin-top:16px; padding:13px;
-    background:var(--olive-mid); color:var(--cream);
-    border:none; border-radius:12px;
-    font-family:'Tajawal',sans-serif; font-size:15px; font-weight:700;
-    cursor:pointer; text-align:center;
-    transition:background 0.2s,transform 0.15s; text-decoration:none;
-  }
-  .order-btn:hover { background:var(--olive); transform:scale(1.01); }
+/* BTN ROW */
+.btn-row { display:flex; gap:8px; margin-top:16px; }
+.order-btn {
+flex:1; display:block; padding:13px 6px;
+background:var(–olive-mid); color:var(–cream);
+border:none; border-radius:12px;
+font-family:‘Tajawal’,sans-serif; font-size:14px; font-weight:700;
+cursor:pointer; text-align:center;
+transition:background 0.2s,transform 0.15s; text-decoration:none;
+}
+.order-btn:hover { background:var(–olive); transform:scale(1.01); }
+.order-btn-wa {
+flex:1;
+display:flex; align-items:center; justify-content:center; gap:6px;
+padding:13px 6px;
+background:#1a7d3a; color:#fff;
+border:none; border-radius:12px;
+font-family:‘Tajawal’,sans-serif; font-size:14px; font-weight:700;
+cursor:pointer; text-align:center;
+transition:background 0.2s,transform 0.15s; text-decoration:none;
+white-space:nowrap;
+}
+.order-btn-wa:hover { background:#156b30; transform:scale(1.01); }
+.order-btn-wa svg { flex-shrink:0; }
 
-  /* WHATSAPP BUTTON */
-  .btn-row {
-    display:flex; gap:8px; margin-top:16px;
-  }
-  .order-btn {
-    flex:1; margin-top:0 !important;
-  }
-  .order-btn-wa {
-    flex:1;
-    display:flex; align-items:center; justify-content:center; gap:6px;
-    padding:13px 8px;
-    background:#1a7d3a; color:#fff;
-    border:none; border-radius:12px;
-    font-family:'Tajawal',sans-serif; font-size:15px; font-weight:700;
-    cursor:pointer; text-align:center;
-    transition:background 0.2s,transform 0.15s; text-decoration:none;
-    white-space:nowrap;
-  }
-  .order-btn-wa:hover { background:#156b30; transform:scale(1.01); }
-  .order-btn-wa svg { flex-shrink:0; }
-  .btn-row .order-btn { margin-top:0; font-size:14px; padding:13px 6px; }
-  .btn-row .order-btn-wa { font-size:14px; padding:13px 6px; }
+/* FEATURES */
+.features {
+display:grid; grid-template-columns:repeat(3,1fr);
+gap:20px; max-width:700px; margin:60px auto 20px;
+padding:0 16px; text-align:center;
+}
+.feature-item {
+padding:30px 16px;
+background:rgba(255,255,255,0.03);
+border:1px solid var(–border); border-radius:16px;
+}
+.feature-icon { font-size:32px; margin-bottom:12px; }
+.feature-title { font-size:15px; font-weight:700; color:var(–cream); margin-bottom:4px; }
+.feature-sub { font-size:12px; color:var(–text-muted); }
 
-  /* FEATURES */
-  .features {
-    display:grid; grid-template-columns:repeat(3,1fr);
-    gap:20px; max-width:700px; margin:60px auto 20px;
-    padding:0 16px; text-align:center;
-  }
-  .feature-item {
-    padding:30px 16px;
-    background:rgba(255,255,255,0.03);
-    border:1px solid var(--border); border-radius:16px;
-  }
-  .feature-icon { font-size:32px; margin-bottom:12px; }
-  .feature-title { font-size:15px; font-weight:700; color:var(--cream); margin-bottom:4px; }
-  .feature-sub { font-size:12px; color:var(--text-muted); }
+/* EVENT GRID */
+.event-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:16px; }
+.event-size-box {
+background:rgba(74,74,42,0.1); border:1px solid var(–border);
+border-radius:12px; padding:14px 10px; text-align:center;
+}
+.event-size-box .sz { font-family:‘Cormorant Garamond’,serif; font-size:22px; font-weight:600; color:var(–olive-mid); }
+.event-size-box .pr { font-size:12px; color:var(–text-muted); margin-top:4px; }
 
-  /* EVENT GRID */
-  .event-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:16px; }
-  .event-size-box {
-    background:rgba(74,74,42,0.1); border:1px solid var(--border);
-    border-radius:12px; padding:14px 10px; text-align:center;
-  }
-  .event-size-box .sz { font-family:'Cormorant Garamond',serif; font-size:22px; font-weight:600; color:var(--olive-mid); }
-  .event-size-box .pr { font-size:12px; color:var(--text-muted); margin-top:4px; }
+/* CANDY BAR TABLE */
+.candy-table { width:100%; border-collapse:collapse; background:var(–card-bg); border-radius:16px; overflow:hidden; box-shadow:0 4px 30px rgba(0,0,0,0.2); }
+.candy-table th { padding:14px 16px; background:var(–olive-mid); color:var(–cream); font-size:14px; font-weight:700; }
+.candy-table th:first-child { text-align:right; }
+.candy-table th:not(:first-child) { text-align:center; color:var(–gold-light); }
+.candy-table td { padding:13px 16px; font-size:14px; border-bottom:1px solid rgba(184,152,58,0.12); }
+.candy-table td:first-child { color:var(–dark); font-weight:600; text-align:right; }
+.candy-table td:not(:first-child) { text-align:center; color:var(–olive-mid); }
+.candy-table tr:last-child td { border-bottom:none; }
+.candy-table tr:nth-child(even) { background:rgba(74,74,42,0.04); }
 
-  /* FLOATING WHATSAPP */
-  .wa-float {
-    position:fixed; bottom:24px; left:24px; z-index:999;
-    width:58px; height:58px;
-    background:#25D366;
-    border-radius:50%;
-    display:flex; align-items:center; justify-content:center;
-    box-shadow:0 4px 20px rgba(37,211,102,0.4);
-    text-decoration:none;
-    transition:transform 0.2s, box-shadow 0.2s;
-    animation:waPulse 2.5s ease infinite;
-  }
-  .wa-float:hover {
-    transform:scale(1.1);
-    box-shadow:0 6px 30px rgba(37,211,102,0.55);
-  }
-  @keyframes waPulse {
-    0%,100% { box-shadow:0 4px 20px rgba(37,211,102,0.4); }
-    50%      { box-shadow:0 4px 30px rgba(37,211,102,0.7), 0 0 0 10px rgba(37,211,102,0.1); }
-  }
+/* FLOATING BUTTONS */
+.wa-float {
+position:fixed; bottom:24px; left:24px; z-index:999;
+width:58px; height:58px;
+background:#25D366; border-radius:50%;
+display:flex; align-items:center; justify-content:center;
+box-shadow:0 4px 20px rgba(37,211,102,0.4);
+text-decoration:none;
+transition:transform 0.2s, box-shadow 0.2s;
+animation:waPulse 2.5s ease infinite;
+}
+.wa-float:hover { transform:scale(1.1); box-shadow:0 6px 30px rgba(37,211,102,0.55); }
+@keyframes waPulse {
+0%,100% { box-shadow:0 4px 20px rgba(37,211,102,0.4); }
+50%      { box-shadow:0 4px 30px rgba(37,211,102,0.7), 0 0 0 10px rgba(37,211,102,0.1); }
+}
 
-  /* FOOTER */
-  .footer {
-    background:rgba(0,0,0,0.4); border-top:1px solid var(--border);
-    padding:50px 20px; text-align:center; margin-top:40px;
-  }
-  .footer-brand { font-family:'Cormorant Garamond',serif; font-size:40px; font-style:italic; color:var(--gold-light); margin-bottom:6px; }
-  .footer-tagline { font-size:12px; letter-spacing:3px; color:var(--text-muted); margin-bottom:20px; }
-  .footer-links { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-bottom:24px; }
-  .footer-ig, .footer-wa {
-    display:inline-flex; align-items:center; gap:8px;
-    padding:10px 22px; border:1px solid var(--border);
-    border-radius:30px; font-size:14px;
-    text-decoration:none; transition:background 0.2s;
-  }
-  .footer-ig { color:var(--gold-light); }
-  .footer-ig:hover { background:rgba(184,152,58,0.1); }
-  .footer-wa { color:#25D366; border-color:rgba(37,211,102,0.3); }
-  .footer-wa:hover { background:rgba(37,211,102,0.1); }
-  .footer-note { font-size:12px; color:var(--text-muted); }
+.ig-float {
+position:fixed; bottom:24px; left:90px; z-index:999;
+width:58px; height:58px;
+background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
+border-radius:50%;
+display:flex; align-items:center; justify-content:center;
+box-shadow:0 4px 20px rgba(220,39,67,0.4);
+text-decoration:none;
+transition:transform 0.2s, box-shadow 0.2s;
+animation:igPulse 2.5s ease infinite 1.2s;
+}
+.ig-float:hover { transform:scale(1.1); box-shadow:0 6px 30px rgba(220,39,67,0.55); }
+@keyframes igPulse {
+0%,100% { box-shadow:0 4px 20px rgba(220,39,67,0.4); }
+50%      { box-shadow:0 4px 30px rgba(220,39,67,0.7), 0 0 0 10px rgba(220,39,67,0.1); }
+}
 
-  /* ANIMATIONS */
-  @keyframes fadeUp { from{opacity:0;transform:translateY(24px);} to{opacity:1;transform:translateY(0);} }
-  .reveal { opacity:0; transform:translateY(20px); transition:opacity 0.6s ease,transform 0.6s ease; }
-  .reveal.visible { opacity:1; transform:translateY(0); }
+/* FOOTER */
+.footer {
+background:rgba(0,0,0,0.4); border-top:1px solid var(–border);
+padding:50px 20px; text-align:center; margin-top:40px;
+}
+.footer-brand { font-family:‘Cormorant Garamond’,serif; font-size:40px; font-style:italic; color:var(–gold-light); margin-bottom:6px; }
+.footer-tagline { font-size:12px; letter-spacing:3px; color:var(–text-muted); margin-bottom:20px; }
+.footer-links { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-bottom:24px; }
+.footer-ig, .footer-wa {
+display:inline-flex; align-items:center; gap:8px;
+padding:10px 22px; border:1px solid var(–border);
+border-radius:30px; font-size:14px;
+text-decoration:none; transition:background 0.2s;
+}
+.footer-ig { color:var(–gold-light); }
+.footer-ig:hover { background:rgba(184,152,58,0.1); }
+.footer-wa { color:#25D366; border-color:rgba(37,211,102,0.3); }
+.footer-wa:hover { background:rgba(37,211,102,0.1); }
+.footer-note { font-size:12px; color:var(–text-muted); }
 
-  @media(max-width:640px){
-    .features { grid-template-columns:1fr; gap:12px; }
-    .event-grid { grid-template-columns:repeat(2,1fr); }
-  }
+/* ANIMATIONS */
+@keyframes fadeUp { from{opacity:0;transform:translateY(24px);} to{opacity:1;transform:translateY(0);} }
+.reveal { opacity:0; transform:translateY(20px); transition:opacity 0.6s ease,transform 0.6s ease; }
+.reveal.visible { opacity:1; transform:translateY(0); }
+
+@media(max-width:640px){
+.features { grid-template-columns:1fr; gap:12px; }
+.event-grid { grid-template-columns:repeat(2,1fr); }
+.ig-float { left:90px; }
+}
 </style>
+
 </head>
 <body>
 
 <!-- FLOATING WHATSAPP -->
-<a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="wa-float" title="تواصل عبر واتساب">
+
+<a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="wa-float" title="تواصل عبر واتساب">
   <svg width="30" height="30" viewBox="0 0 24 24" fill="white">
     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
   </svg>
 </a>
 
+<!-- FLOATING INSTAGRAM -->
+
+<a href="https://instagram.com/berry._323" target="_blank" class="ig-float" title="تابعنا على إنستغرام">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="white" stroke-width="2"/>
+    <circle cx="12" cy="12" r="4" stroke="white" stroke-width="2"/>
+    <circle cx="17.5" cy="6.5" r="1.5" fill="white"/>
+  </svg>
+</a>
+
 <!-- HERO -->
+
 <section class="hero">
   <div class="hero-ornament"></div>
   <div class="logo-circle">
@@ -327,6 +357,7 @@
 </section>
 
 <!-- NAV -->
+
 <nav class="nav">
   <div class="nav-inner">
     <button class="nav-btn active" onclick="goTo('sec-layer')">لاير كيك</button>
@@ -340,10 +371,12 @@
     <button class="nav-btn" onclick="goTo('sec-hala')">حلا</button>
     <button class="nav-btn" onclick="goTo('sec-other')">متنوعات</button>
     <button class="nav-btn" onclick="goTo('sec-events')">مناسبات</button>
+    <button class="nav-btn" onclick="goTo('sec-candy')">كاندي بار 🎀</button>
   </div>
 </nav>
 
 <!-- FEATURES -->
+
 <div class="features">
   <div class="feature-item reveal">
     <div class="feature-icon">🌿</div>
@@ -363,6 +396,7 @@
 </div>
 
 <!-- ══ LAYER CAKE ══ -->
+
 <div id="sec-layer" class="section">
   <div class="section-header reveal">
     <div class="section-label">◆ Berry's Menu ◆</div>
@@ -371,10 +405,10 @@
   </div>
   <div class="grid">
     <div class="card reveal">
-      ‏<div class="card-ph">
-‏       <img src="laer.jpeg" alt="لاير كيك" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-       </div>
-       <div class="card-body">
+      <div class="card-ph">
+        <img src="laer.jpeg" alt="لاير كيك" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+      <div class="card-body">
         <div class="card-name">لاير كيك</div>
         <div class="card-tags">
           <span class="tag">🍫 كندر</span><span class="tag">🍪 ككو</span>
@@ -385,16 +419,20 @@
           <span class="price-val">20,000 <span class="price-unit">دع</span></span>
           <span class="price-label">5 قطع</span>
         </div>
-        <div class="btn-row"><a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a><a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="order-btn-wa">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          واتساب
-        </a></div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            واتساب
+          </a>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <!-- ══ COOKIES ══ -->
+
 <div id="sec-cookies" class="section">
   <div class="section-header reveal">
     <div class="section-label">◆ Berry's Menu ◆</div>
@@ -404,28 +442,7 @@
   <div class="grid">
     <div class="card reveal">
       <div class="card-ph">
-       <div class="slider-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; border-radius: 8px;">
-        <style>
-            @keyframes cookiesSlide {
-                0% { opacity: 1; }
-                45% { opacity: 1; }
-                55% { opacity: 0; }
-                95% { opacity: 0; }
-                100% { opacity: 1; }
-            }
-            .slide-img-cookies {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: opacity 1s ease-in-out;
-            }
-            .cookies-img1 { animation: cookiesSlide 6s infinite; }
-            .cookies-img2 { animation: cookiesSlide 6s infinite reverse; }
-        </style>
-        <img src="كوكيز.jpeg" class="slide-img-cookies cookies-img1" alt="كوكيز">
-        <img src="كوكيز اسود.jpeg" class="slide-img-cookies cookies-img2" alt="كوكيز اسود">
-      </div>
+        <img src="كوكيز.jpeg" alt="كوكيز" style="width:100%;height:100%;object-fit:cover;">
       </div>
       <div class="card-body">
         <div class="card-name">كوكيز محشي نوتيلا</div>
@@ -437,37 +454,16 @@
         <div class="price-row"><span class="price-val">8,000 <span class="price-unit">دع</span></span><span class="price-label">6 قطع</span></div>
         <div class="price-row"><span class="price-val">13,000 <span class="price-unit">دع</span></span><span class="price-label">10 قطع</span></div>
         <div class="price-row"><span class="price-val">15,000 <span class="price-unit">دع</span></span><span class="price-label">12 قطعة</span></div>
-        <div class="btn-row"><a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a><a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="order-btn-wa">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          واتساب
-        </a></div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
       </div>
     </div>
     <div class="card reveal">
       <div class="card-badge">بلجيكي</div>
       <div class="card-ph">
-       <div class="slider-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; border-radius: 8px;">
-        <style>
-            @keyframes cookiesSlide {
-                0% { opacity: 1; }
-                45% { opacity: 1; }
-                55% { opacity: 0; }
-                95% { opacity: 0; }
-                100% { opacity: 1; }
-            }
-            .slide-img-cookies {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: opacity 1s ease-in-out;
-            }
-            .cookies-img1 { animation: cookiesSlide 6s infinite; }
-            .cookies-img2 { animation: cookiesSlide 6s infinite reverse; }
-        </style>
-        <img src="كوكيز بصوص.jpeg" class="slide-img-cookies cookies-img1" alt="كوكيز بصوص">
-        <img src="كوكيز كندر.png" class="slide-img-cookies cookies-img2" alt="كوكيز كندر">
-      </div>
+        <img src="كوكيز بصوص.jpeg" alt="كوكيز بلجيكي" style="width:100%;height:100%;object-fit:cover;">
       </div>
       <div class="card-body">
         <div class="card-name">كوكيز بلجيكي</div>
@@ -478,16 +474,17 @@
         <div class="price-row"><span class="price-val">2,500 <span class="price-unit">دع</span></span><span class="price-label">1 قطعة</span></div>
         <div class="price-row"><span class="price-val">14,000 <span class="price-unit">دع</span></span><span class="price-label">6 قطع</span></div>
         <div class="price-row"><span class="price-val">24,000 <span class="price-unit">دع</span></span><span class="price-label">10 قطع</span></div>
-        <div class="btn-row"><a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a><a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="order-btn-wa">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          واتساب
-        </a></div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <!-- ══ BROWNIES ══ -->
+
 <div id="sec-brownies" class="section">
   <div class="section-header reveal">
     <div class="section-label">◆ Berry's Menu ◆</div>
@@ -496,46 +493,24 @@
   </div>
   <div class="grid">
     <div class="card reveal">
-      <div class="card-ph">
-       <div class="slider-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; border-radius: 8px;">
-        <style>
-            @keyframes browniesSlide {
-                0% { opacity: 1; }
-                45% { opacity: 1; }
-                55% { opacity: 0; }
-                95% { opacity: 0; }
-                100% { opacity: 1; }
-            }
-            .slide-img-brownies {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: opacity 1s ease-in-out;
-            }
-            .brownies-img1 { animation: browniesSlide 6s infinite; }
-            .brownies-img2 { animation: browniesSlide 6s infinite reverse; }
-        </style>
-        <img src="برانيز.jpeg" class="slide-img-brownies brownies-img1" alt="براونيز">
-        <img src="براونيز بصوص.jpeg" class="slide-img-brownies brownies-img2" alt="براونيز بصوص">
-       </div>
-       </div>
-       <div class="card-body">
+      <div class="card-ph"><img src="برانيز.jpeg" alt="براونيز" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="card-body">
         <div class="card-name">براونيز</div>
         <div class="card-divider"></div>
         <div class="price-row"><span class="price-val">12,000 <span class="price-unit">دع</span></span><span class="price-label">12 قطعة – بدون صوص</span></div>
         <div class="price-row"><span class="price-val">24,000 <span class="price-unit">دع</span></span><span class="price-label">24 قطعة – بدون صوص</span></div>
         <div class="price-row"><span class="price-val">15,000 <span class="price-unit">دع</span></span><span class="price-label">12 قطعة – مع صوص</span></div>
-        <div class="btn-row"><a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a><a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="order-btn-wa">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          واتساب
-        </a></div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <!-- ══ PUFF & TART ══ -->
+
 <div id="sec-puff" class="section">
   <div class="section-header reveal">
     <div class="section-label">◆ Berry's Menu ◆</div>
@@ -544,39 +519,36 @@
   </div>
   <div class="grid">
     <div class="card reveal">
-      <div class="card-ph">
-       <img src="Pastre.jpeg" alt="باف باستري" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-       </div>
-       <div class="card-body">
+      <div class="card-ph"><img src="Pastre.jpeg" alt="باف باستري" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="card-body">
         <div class="card-name">باف باستري</div>
         <div class="card-divider"></div>
         <div class="price-row"><span class="price-val">12,000 <span class="price-unit">دع</span></span><span class="price-label">15 قطعة</span></div>
         <div class="price-row"><span class="price-val">24,000 <span class="price-unit">دع</span></span><span class="price-label">30 قطعة</span></div>
-        <div class="btn-row"><a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a><a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="order-btn-wa">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          واتساب
-        </a></div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
       </div>
     </div>
     <div class="card reveal">
-      <div class="card-ph">
-       <img src="Tart.jpeg" alt="ميني تارت" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-       </div>
-       <div class="card-body">
+      <div class="card-ph"><img src="Tart.jpeg" alt="ميني تارت" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="card-body">
         <div class="card-name">ميني تارت</div>
         <div class="card-divider"></div>
         <div class="price-row"><span class="price-val">8,000 <span class="price-unit">دع</span></span><span class="price-label">25 قطعة</span></div>
         <div class="price-row"><span class="price-val">15,000 <span class="price-unit">دع</span></span><span class="price-label">50 قطعة</span></div>
-        <div class="btn-row"><a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a><a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="order-btn-wa">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          واتساب
-        </a></div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <!-- ══ TIRAMISU ══ -->
+
 <div id="sec-tiramisu" class="section">
   <div class="section-header reveal">
     <div class="section-label">◆ Berry's Menu ◆</div>
@@ -585,39 +557,36 @@
   </div>
   <div class="grid">
     <div class="card reveal">
-      <div class="card-ph">
-       <img src="Termso.jpeg" alt="تيراميسو" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-       </div>
-       <div class="card-body">
+      <div class="card-ph"><img src="Termso.jpeg" alt="تيراميسو" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="card-body">
         <div class="card-name">تيراميسو</div>
         <div class="card-divider"></div>
         <div class="price-row"><span class="price-val">2,000 <span class="price-unit">دع</span></span><span class="price-label">👤 لشخص</span></div>
         <div class="price-row"><span class="price-val">4,000 <span class="price-unit">دع</span></span><span class="price-label">👫 لشخصين</span></div>
         <div class="price-row"><span class="price-val">20,000 <span class="price-unit">دع</span></span><span class="price-label">👨‍👩‍👧‍👦 عائلي</span></div>
-        <div class="btn-row"><a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a><a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="order-btn-wa">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          واتساب
-        </a></div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
       </div>
     </div>
     <div class="card reveal">
-      <div class="card-ph">
-       <img src="كيك تيراميسو .jpeg" alt="كيك تيراميسو" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-       </div>
+      <div class="card-ph"><img src="كيك تيراميسو .jpeg" alt="كيك تيراميسو" style="width:100%;height:100%;object-fit:cover;"></div>
       <div class="card-body">
         <div class="card-name">كيكة تيراميسو</div>
         <div class="card-divider"></div>
         <div class="price-row"><span class="price-val">12,000 <span class="price-unit">دع</span></span><span class="price-label">كيكة كاملة</span></div>
-        <div class="btn-row"><a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a><a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="order-btn-wa">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          واتساب
-        </a></div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <!-- ══ CHEESECAKE ══ -->
+
 <div id="sec-cheesecake" class="section">
   <div class="section-header reveal">
     <div class="section-label">◆ Berry's Menu ◆</div>
@@ -627,90 +596,62 @@
   <div class="grid">
     <div class="card reveal">
       <div class="card-badge">كلاسيك</div>
-      <div class="card-ph">
-       <img src="سان سباستيان .jpeg" alt="سان سباستيان" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-      </div>
+      <div class="card-ph"><img src="سان سباستيان .jpeg" alt="سان سباستيان" style="width:100%;height:100%;object-fit:cover;"></div>
       <div class="card-body">
         <div class="card-name">سان سيباستيان تشيز كيك</div>
         <div class="card-divider"></div>
         <div class="price-row"><span class="price-val">35,000 <span class="price-unit">دع</span></span><span class="price-label">كيكة كاملة</span></div>
-        <div class="btn-row"><a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a><a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="order-btn-wa">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          واتساب
-        </a></div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
       </div>
     </div>
     <div class="card reveal">
-      <div class="card-ph">
-       <div class="slider-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; border-radius: 8px;">
-        <style>
-            @keyframes nySlide {
-                0% { opacity: 1; }
-                45% { opacity: 1; }
-                55% { opacity: 0; }
-                95% { opacity: 0; }
-                100% { opacity: 1; }
-            }
-            .slide-img-ny {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: opacity 1s ease-in-out;
-            }
-            .ny-img1 { animation: nySlide 6s infinite; }
-            .ny-img2 { animation: nySlide 6s infinite reverse; }
-        </style>
-        <img src="نيورك تشيز كيك.jpeg" class="slide-img-ny ny-img1" alt="نيويورك تشيز كيك">
-        <img src="نيو.jpeg" class="slide-img-ny ny-img2" alt="نيويورك تشيز كيك - لقطة ثانية">
-      </div>
-    </div>
+      <div class="card-ph"><img src="نيورك تشيز كيك.jpeg" alt="نيويورك تشيز كيك" style="width:100%;height:100%;object-fit:cover;"></div>
       <div class="card-body">
         <div class="card-name">نيويورك تشيز كيك</div>
         <div class="card-divider"></div>
         <div class="price-row"><span class="price-val">15,000 <span class="price-unit">دع</span></span><span class="price-label">حجم وسط</span></div>
         <div class="price-row"><span class="price-val">25,000 <span class="price-unit">دع</span></span><span class="price-label">حجم كبير</span></div>
-        <div class="btn-row"><a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a><a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="order-btn-wa">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          واتساب
-        </a></div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
       </div>
     </div>
     <div class="card reveal">
-      <div class="card-ph">
-       <img src="كيك كاسترد ب لوتس.jpeg" alt="كيك كاسترد باللوتس" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-       </div>
-       <div class="card-body">
+      <div class="card-ph"><img src="كيك كاسترد ب لوتس.jpeg" alt="تشيز كيك لوتس" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="card-body">
         <div class="card-name">تشيز كيك لوتس</div>
         <div class="card-divider"></div>
         <div class="price-row"><span class="price-val">15,000 <span class="price-unit">دع</span></span><span class="price-label">حجم وسط</span></div>
         <div class="price-row"><span class="price-val">25,000 <span class="price-unit">دع</span></span><span class="price-label">حجم كبير</span></div>
-        <div class="btn-row"><a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a><a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="order-btn-wa">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          واتساب
-        </a></div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
       </div>
     </div>
     <div class="card reveal">
-      <div class="card-ph">
-       <img src="ميني تشيز كيك بستاشيو.jpeg" alt="ميني تشيز كيك بستاشيو" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-       </div>
-       <div class="card-body">
+      <div class="card-ph"><img src="ميني تشيز كيك بستاشيو.jpeg" alt="ميني تشيز كيك بستاشيو" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="card-body">
         <div class="card-name">ميني تشيز كيك البستاشيو</div>
         <div class="card-divider"></div>
         <div class="price-row"><span class="price-val">1,500 <span class="price-unit">دع</span></span><span class="price-label">1 قطعة</span></div>
         <div class="price-row"><span class="price-val">9,000 <span class="price-unit">دع</span></span><span class="price-label">6 قطع</span></div>
         <div class="price-row"><span class="price-val">14,000 <span class="price-unit">دع</span></span><span class="price-label">10 قطع</span></div>
-        <div class="btn-row"><a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a><a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="order-btn-wa">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          واتساب
-        </a></div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <!-- ══ BIG CAKES ══ -->
+
 <div id="sec-bigcakes" class="section">
   <div class="section-header reveal">
     <div class="section-label">◆ Berry's Menu ◆</div>
@@ -719,179 +660,111 @@
   </div>
   <div class="grid">
     <div class="card reveal">
-      <div class="card-ph">
-       <div class="slider-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; border-radius: 8px;">
-        <style>
-            @keyframes custardTripleSlide {
-                0%, 30% { opacity: 1; }
-                33%, 97% { opacity: 0; }
-                100% { opacity: 1; }
-            }
-            .slide-img-custard {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                opacity: 0;
-                animation: custardTripleSlide 9s infinite;
-            }
-            .c-img1 { animation-delay: 0s; opacity: 1; }
-            .c-img2 { animation-delay: 3s; }
-            .c-img3 { animation-delay: 6s; }
-        </style>
-        <img src="كاسترد فراوله وبستاشيو كبير.jpeg" class="slide-img-custard c-img1" alt="كاسترد فراولة وبستاشيو">
-        <img src="كاسترد كبير منكا .jpeg" class="slide-img-custard c-img2" alt="كاسترد منكا">
-        <img src="كيك كاسترد كبير ككو وفراوله.jpeg" class="slide-img-custard c-img3" alt="كيك كاسترد ككو وفراولة">
-       </div>
-       </div>
-       <div class="card-body">
+      <div class="card-ph"><img src="كاسترد فراوله وبستاشيو كبير.jpeg" alt="كيك كاسترد" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="card-body">
         <div class="card-name">كيك الكاسترد</div>
-        <div class="card-tags">
-          <span class="tag">🍓 فراولة</span><span class="tag">🟢 بستاشيو</span>
-          <span class="tag">🥭 منكا</span><span class="tag">🍪 ككو</span>
-        </div>
+        <div class="card-tags"><span class="tag">🍓 فراولة</span><span class="tag">🟢 بستاشيو</span><span class="tag">🥭 منكا</span><span class="tag">🍪 ككو</span></div>
         <div class="card-divider"></div>
         <div class="price-row"><span class="price-val">25,000 <span class="price-unit">دع</span></span><span class="price-label">كيك كامل</span></div>
-        <div class="btn-row"><a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a><a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="order-btn-wa">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          واتساب
-        </a></div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
       </div>
     </div>
-
-    <!-- ✦ جديد: كيكة كريمة وفراولة ✦ -->
     <div class="card reveal">
-      <div class="card-ph">
-       <img src="كيك كاسترد بالفراولة .jpeg" alt="كيك كاسترد بالفراولة" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-      </div>
+      <div class="card-ph"><img src="كيك كاسترد بالفراولة .jpeg" alt="كيكة كريمة وفراولة" style="width:100%;height:100%;object-fit:cover;"></div>
       <div class="card-body">
         <div class="card-name">كيكة كريمة وفراولة</div>
         <div class="card-divider"></div>
         <div class="price-row"><span class="price-val">15,000 <span class="price-unit">دع</span></span><span class="price-label">حجم وسط</span></div>
         <div class="price-row"><span class="price-val">25,000 <span class="price-unit">دع</span></span><span class="price-label">حجم كبير</span></div>
-        <div class="btn-row"><a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a><a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="order-btn-wa">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          واتساب
-        </a></div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
       </div>
     </div>
-
-    <!-- ✦ جديد: كيك الكاسترد بالككو والفراولة ✦ -->
     <div class="card reveal">
-      <div class="card-ph">
-       <img src="كيك كاسترد ككو وفراوله.jpeg" alt="كيك كاسترد ككو وفراولة" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-      </div>
+      <div class="card-ph"><img src="كيك كاسترد ككو وفراوله.jpeg" alt="كيك كاسترد ككو" style="width:100%;height:100%;object-fit:cover;"></div>
       <div class="card-body">
         <div class="card-name">كيك الكاسترد بالككو والفراولة</div>
-        <div class="card-tags">
-          <span class="tag">🍪 ككو</span><span class="tag">🍓 فراولة</span>
-        </div>
+        <div class="card-tags"><span class="tag">🍪 ككو</span><span class="tag">🍓 فراولة</span></div>
         <div class="card-divider"></div>
         <div class="price-row"><span class="price-val">18,000 <span class="price-unit">دع</span></span><span class="price-label">حجم وسط</span></div>
-        <div class="btn-row"><a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a><a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="order-btn-wa">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          واتساب
-        </a></div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
       </div>
     </div>
-
     <div class="card reveal">
-      <div class="card-ph">
-       <div class="slider-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; border-radius: 8px;">
-        <style>
-            @keyframes matildaSlide {
-                0% { opacity: 1; }
-                45% { opacity: 1; }
-                55% { opacity: 0; }
-                95% { opacity: 0; }
-                100% { opacity: 1; }
-            }
-            .slide-img-matilda {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: opacity 1s ease-in-out;
-            }
-            .matilda-img1 { animation: matildaSlide 6s infinite; }
-            .matilda-img2 { animation: matildaSlide 6s infinite reverse; }
-        </style>
-        <img src="ماتيلدا بدون فرواله.jpeg" class="slide-img-matilda matilda-img1" alt="ماتيلدا بدون فراولة">
-        <img src="ماتيلدا فراوله.jpeg" class="slide-img-matilda matilda-img2" alt="ماتيلدا فراولة">
-       </div>
-       </div>
-       <div class="card-body">
+      <div class="card-ph"><img src="ماتيلدا بدون فرواله.jpeg" alt="ماتيلدا كيك" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="card-body">
         <div class="card-name">ماتيلدا كيك</div>
         <div class="card-divider"></div>
         <div class="price-row"><span class="price-val">15,000 <span class="price-unit">دع</span></span><span class="price-label">حجم وسط</span></div>
         <div class="price-row"><span class="price-val">25,000 <span class="price-unit">دع</span></span><span class="price-label">حجم كبير</span></div>
-        <div class="btn-row"><a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a><a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="order-btn-wa">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          واتساب
-        </a></div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
       </div>
     </div>
     <div class="card reveal">
-      <div class="card-ph">
-       <img src="كيكة فانيلا وفراولة .jpeg" alt="كيكة فانيلا وفراولة" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-      </div>
+      <div class="card-ph"><img src="كيكة فانيلا وفراولة .jpeg" alt="كيكة فانيليا وفراولة" style="width:100%;height:100%;object-fit:cover;"></div>
       <div class="card-body">
         <div class="card-name">كيكة فانيليا وفراولة</div>
         <div class="card-divider"></div>
         <div class="price-row"><span class="price-val">28,000 <span class="price-unit">دع</span></span><span class="price-label">كيكة كاملة</span></div>
-        <div class="btn-row"><a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a><a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="order-btn-wa">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          واتساب
-        </a></div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
       </div>
     </div>
     <div class="card reveal">
-      <div class="card-ph">
-       <img src="شارلوت .jpeg" alt="شارلوت" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-       </div>
-       <div class="card-body">
+      <div class="card-ph"><img src="شارلوت .jpeg" alt="شارلوت كيك" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="card-body">
         <div class="card-name">شارلوت كيك</div>
         <div class="card-divider"></div>
         <div class="price-row"><span class="price-val">18,000 <span class="price-unit">دع</span></span><span class="price-label">حجم صغير</span></div>
         <div class="price-row"><span class="price-val">30,000 <span class="price-unit">دع</span></span><span class="price-label">حجم كبير</span></div>
-        <div class="btn-row"><a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a><a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="order-btn-wa">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          واتساب
-        </a></div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
       </div>
     </div>
     <div class="card reveal">
-      <div class="card-ph">
-       <img src="بركانيه.jpeg" alt="كيكة بركانية" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-      </div>
+      <div class="card-ph"><img src="بركانيه.jpeg" alt="كيكة بركانية" style="width:100%;height:100%;object-fit:cover;"></div>
       <div class="card-body">
         <div class="card-name">كيكة بركانية</div>
         <div class="card-divider"></div>
         <div class="price-row"><span class="price-val">18,000 <span class="price-unit">دع</span></span><span class="price-label">كيكة واحدة</span></div>
-        <div class="btn-row"><a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a><a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="order-btn-wa">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          واتساب
-        </a></div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
       </div>
     </div>
     <div class="card reveal">
-      <div class="card-ph">
-       <img src="كيكة مع كريب مقرمش.jpeg" alt="كيكة مع كريب مقرمش" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-       </div>
-       <div class="card-body">
+      <div class="card-ph"><img src="كيكة مع كريب مقرمش.jpeg" alt="كيكة مع كريب مقرمش" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="card-body">
         <div class="card-name">كيكة مع كريب مقرمش</div>
         <div class="card-divider"></div>
         <div class="price-row"><span class="price-val">15,000 <span class="price-unit">دع</span></span><span class="price-label">كيكة واحدة</span></div>
-        <div class="btn-row"><a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a><a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="order-btn-wa">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          واتساب
-        </a></div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <!-- ══ MINI & CAKE POPS ══ -->
+
 <div id="sec-mini" class="section">
   <div class="section-header reveal">
     <div class="section-label">◆ Berry's Menu ◆</div>
@@ -900,93 +773,61 @@
   </div>
   <div class="grid">
     <div class="card reveal">
-      <div class="card-ph">
-       <img src="كيك الورد.jpeg" alt="كيك الورد" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-       </div>
-       <div class="card-body">
+      <div class="card-ph"><img src="كيك الورد.jpeg" alt="كيك الورد" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="card-body">
         <div class="card-name">كيك الورد</div>
         <div class="card-divider"></div>
         <div class="price-row"><span class="price-val">2,000 <span class="price-unit">دع</span></span><span class="price-label">القطعة</span></div>
-        <div class="btn-row"><a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a><a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="order-btn-wa">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          واتساب
-        </a></div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
       </div>
     </div>
     <div class="card reveal">
-      <div class="card-ph">
-       <img src="Cake pop.jpeg" alt="Cake Pop" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-      </div>
+      <div class="card-ph"><img src="Cake pop.jpeg" alt="كيك بوب" style="width:100%;height:100%;object-fit:cover;"></div>
       <div class="card-body">
         <div class="card-name">كيك بوب</div>
         <div class="card-divider"></div>
         <div class="price-row"><span class="price-val">8,000 <span class="price-unit">دع</span></span><span class="price-label">10 قطع</span></div>
         <div class="price-row"><span class="price-val">12,000 <span class="price-unit">دع</span></span><span class="price-label">15 قطعة</span></div>
-        <div class="btn-row"><a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a><a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="order-btn-wa">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          واتساب
-        </a></div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
       </div>
     </div>
     <div class="card reveal">
-      <div class="card-ph">
-       <div class="slider-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; border-radius: 8px;">
-        <style>
-            @keyframes coloringSlide {
-                0%, 30% { opacity: 1; }
-                33%, 97% { opacity: 0; }
-                100% { opacity: 1; }
-            }
-            .slide-img-coloring {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                opacity: 0;
-                animation: coloringSlide 9s infinite;
-            }
-            .clr-img1 { animation-delay: 0s; opacity: 1; }
-            .clr-img2 { animation-delay: 3s; }
-            .clr-img3 { animation-delay: 6s; }
-        </style>
-        <img src="Photo .jpeg" class="slide-img-coloring clr-img1" alt="تلوين 1">
-        <img src="تلوين مرسووم.jpeg" class="slide-img-coloring clr-img2" alt="تلوين 2">
-        <img src="تلوين مرسوم.jpeg" class="slide-img-coloring clr-img3" alt="تلوين 3">
-       </div>
-       </div>
-       <div class="card-body">
+      <div class="card-ph"><img src="Photo .jpeg" alt="كيك الكلاصات" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="card-body">
         <div class="card-name">كيك الكلاصات</div>
-        <div class="card-tags">
-          <span class="tag">كيك + ألوان للرسم</span>
-          <span class="tag">4 ألوان مشمولة</span>
-        </div>
+        <div class="card-tags"><span class="tag">كيك + ألوان للرسم</span><span class="tag">4 ألوان مشمولة</span></div>
         <div class="card-divider"></div>
         <div class="price-row"><span class="price-val">3,000 <span class="price-unit">دع</span></span><span class="price-label">القطعة</span></div>
         <div class="price-row"><span class="price-val">2,000 <span class="price-unit">دع</span></span><span class="price-label">+ لون زيادة</span></div>
-        <div class="btn-row"><a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a><a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="order-btn-wa">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          واتساب
-        </a></div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
       </div>
     </div>
     <div class="card reveal">
-      <div class="card-ph">
-       <img src="كيك تمر.jpeg" alt="كيك تمر" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-       </div>
-       <div class="card-body">
+      <div class="card-ph"><img src="كيك تمر.jpeg" alt="ميني كيك التمر" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="card-body">
         <div class="card-name">ميني كيك التمر</div>
         <div class="card-divider"></div>
         <div class="price-row"><span class="price-val">12,000 <span class="price-unit">دع</span></span><span class="price-label">18 قطعة</span></div>
-        <div class="btn-row"><a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a><a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="order-btn-wa">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          واتساب
-        </a></div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <!-- ══ HALA ══ -->
+
 <div id="sec-hala" class="section">
   <div class="section-header reveal">
     <div class="section-label">◆ Berry's Menu ◆</div>
@@ -995,51 +836,46 @@
   </div>
   <div class="grid">
     <div class="card reveal">
-      <div class="card-ph">
-       <img src="حلا الزامل.jpeg" alt="حلا الزامل" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-       </div>
-       <div class="card-body">
+      <div class="card-ph"><img src="حلا الزامل.jpeg" alt="حلا الزامل" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="card-body">
         <div class="card-name">حلا الزامل</div>
         <div class="card-divider"></div>
         <div class="price-row"><span class="price-val">4,000 <span class="price-unit">دع</span></span><span class="price-label">القطعة</span></div>
-        <div class="btn-row"><a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a><a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="order-btn-wa">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          واتساب
-        </a></div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
       </div>
     </div>
     <div class="card reveal">
-      <div class="card-ph">
-       <img src="حلا القهوة.jpeg" alt="حلا القهوة" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-       </div>
-       <div class="card-body">
+      <div class="card-ph"><img src="حلا القهوة.jpeg" alt="حلا القهوة" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="card-body">
         <div class="card-name">حلا القهوة</div>
         <div class="card-divider"></div>
         <div class="price-row"><span class="price-val">3,000 <span class="price-unit">دع</span></span><span class="price-label">القطعة</span></div>
-        <div class="btn-row"><a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a><a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="order-btn-wa">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          واتساب
-        </a></div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
       </div>
     </div>
     <div class="card reveal">
-      <div class="card-ph">
-       <img src="دبل شوكليت.jpeg" alt="دبل شوكليت" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-       </div>
-       <div class="card-body">
+      <div class="card-ph"><img src="دبل شوكليت.jpeg" alt="دبل شوكليت" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="card-body">
         <div class="card-name">دبل شوكليت</div>
         <div class="card-divider"></div>
         <div class="price-row"><span class="price-val">3,000 <span class="price-unit">دع</span></span><span class="price-label">القطعة</span></div>
-        <div class="btn-row"><a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a><a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="order-btn-wa">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          واتساب
-        </a></div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <!-- ══ OTHER ══ -->
+
 <div id="sec-other" class="section">
   <div class="section-header reveal">
     <div class="section-label">◆ Berry's Menu ◆</div>
@@ -1048,83 +884,33 @@
   </div>
   <div class="grid">
     <div class="card reveal">
-      <div class="card-ph">
-       <div class="slider-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; border-radius: 8px;">
-        <style>
-            @keyframes donutSlide {
-                0% { opacity: 1; }
-                45% { opacity: 1; }
-                55% { opacity: 0; }
-                95% { opacity: 0; }
-                100% { opacity: 1; }
-            }
-            .slide-img-donut {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: opacity 1s ease-in-out;
-            }
-            .donut-img1 { animation: donutSlide 6s infinite; }
-            .donut-img2 { animation: donutSlide 6s infinite reverse; }
-        </style>
-        <img src="دونات اسود.jpeg" class="slide-img-donut donut-img1" alt="دونات اسود">
-        <img src="دونات ابيض.jpeg" class="slide-img-donut donut-img2" alt="دونات ابيض">
-       </div>
-       </div>
-       <div class="card-body">
+      <div class="card-ph"><img src="دونات اسود.jpeg" alt="دونات" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="card-body">
         <div class="card-name">دونات</div>
-        <div class="card-tags">
-          <span class="tag">🍫 دارك شوكليت</span><span class="tag">🤍 وايت شوكليت</span>
-        </div>
+        <div class="card-tags"><span class="tag">🍫 دارك شوكليت</span><span class="tag">🤍 وايت شوكليت</span></div>
         <div class="card-divider"></div>
         <div class="price-row"><span class="price-val">2,000 <span class="price-unit">دع</span></span><span class="price-label">القطعة</span></div>
-        <div class="btn-row"><a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a><a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="order-btn-wa">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          واتساب
-        </a></div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
       </div>
     </div>
     <div class="card reveal">
-      <div class="card-ph">
-       <div class="slider-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; border-radius: 8px;">
-        <style>
-            @keyframes slide {
-                0% { opacity: 1; }
-                45% { opacity: 1; }
-                55% { opacity: 0; }
-                95% { opacity: 0; }
-                100% { opacity: 1; }
-            }
-            .slide-img {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: opacity 1s ease-in-out;
-            }
-            .img1 { animation: slide 6s infinite; }
-            .img2 { animation: slide 6s infinite reverse; }
-        </style>
-        <img src="تمر ككو.jpeg" class="slide-img img1" alt="تمر ككو">
-        <img src="تمر ابيض.jpeg" class="slide-img img2" alt="تمر ابيض">
-       </div>
-       </div>
-       <div class="card-body">
+      <div class="card-ph"><img src="تمر ككو.jpeg" alt="تمر محشي" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="card-body">
         <div class="card-name">تمر محشي مغطى بالشوكلاتة</div>
         <div class="card-divider"></div>
         <div class="price-row"><span class="price-val">20,000 <span class="price-unit">دع</span></span><span class="price-label">الكيلو</span></div>
-        <div class="btn-row"><a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a><a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="order-btn-wa">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          واتساب
-        </a></div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
       </div>
     </div>
     <div class="card reveal">
-      <div class="card-ph">
-       <img src="كليجه.jpeg" alt="كليجة" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-       </div>
-       <div class="card-body">
+      <div class="card-ph"><img src="كليجه.jpeg" alt="كليجة" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="card-body">
         <div class="card-name">كليجة</div>
         <div class="card-tags">
           <span class="tag">🟤 تمر</span><span class="tag">🪸 حلقوم</span>
@@ -1133,30 +919,29 @@
         <div class="card-divider"></div>
         <div class="price-row"><span class="price-val">12,000 <span class="price-unit">دع</span></span><span class="price-label">كيلو (تمر/حلقوم/جوز/سمسم)</span></div>
         <div class="price-row"><span class="price-val">20,000 <span class="price-unit">دع</span></span><span class="price-label">كيلو فستق حلبي</span></div>
-        <div class="btn-row"><a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a><a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="order-btn-wa">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          واتساب
-        </a></div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
       </div>
     </div>
     <div class="card reveal">
-      <div class="card-ph">
-       <img src="أصابع سمبوسة بالكاسترد .jpeg" alt="أصابع سمبوسة بالكاسترد" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-       </div>
-       <div class="card-body">
+      <div class="card-ph"><img src="أصابع سمبوسة بالكاسترد .jpeg" alt="أصابع السمبوسة بالكاسترد" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="card-body">
         <div class="card-name">أصابع السمبوسة بالكاسترد</div>
         <div class="card-divider"></div>
         <div class="price-row"><span class="price-val">12,000 <span class="price-unit">دع</span></span><span class="price-label">25 قطعة</span></div>
-        <div class="btn-row"><a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a><a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="order-btn-wa">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          واتساب
-        </a></div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <!-- ══ EVENTS ══ -->
+
 <div id="sec-events" class="section">
   <div class="section-header reveal">
     <div class="section-label">◆ Berry's Menu ◆</div>
@@ -1166,30 +951,7 @@
   <div class="grid" style="grid-template-columns:1fr;">
     <div class="card reveal">
       <div class="card-badge">مناسبات وأعراس</div>
-      <div class="card-ph">
-       <div class="slider-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; border-radius: 8px;">
-        <style>
-            @keyframes italianSlide {
-                0% { opacity: 1; }
-                45% { opacity: 1; }
-                55% { opacity: 0; }
-                95% { opacity: 0; }
-                100% { opacity: 1; }
-            }
-            .slide-img-italian {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: opacity 1s ease-in-out;
-            }
-            .italian-img1 { animation: italianSlide 6s infinite; }
-            .italian-img2 { animation: italianSlide 6s infinite reverse; }
-        </style>
-        <img src="ايطاليه.jpeg" class="slide-img-italian italian-img1" alt="حلويات إيطالية">
-        <img src="ايطاليه٢.jpeg" class="slide-img-italian italian-img2" alt="حلويات إيطالية ٢">
-      </div>
-      </div>
+      <div class="card-ph"><img src="ايطاليه.jpeg" alt="الكيكة الإيطالية" style="width:100%;height:100%;object-fit:cover;"></div>
       <div class="card-body">
         <div class="card-name">الكيكة الإيطالية — كيك المناسبات</div>
         <div style="font-size:13px;color:var(--text-muted);margin-bottom:14px;text-align:right;">متوفرة من 40 سم لـ 100 سم</div>
@@ -1202,16 +964,116 @@
           <div class="event-size-box"><div class="sz">90 سم</div><div class="pr">275,000 دع</div></div>
           <div class="event-size-box" style="grid-column:1/-1;max-width:160px;margin:0 auto;"><div class="sz">100 سم</div><div class="pr">300,000 دع</div></div>
         </div>
-        <div class="btn-row"><a href="https://instagram.com/berry._323" target="_blank" class="order-btn" style="margin-top:20px;">📩 استفسر عن الطلب</a><a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="order-btn-wa">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          واتساب
-        </a></div>
+        <div class="btn-row" style="margin-top:20px;">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 استفسر عن الطلب</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
+<!-- ══ CANDY BAR ══ -->
+
+<div id="sec-candy" class="section">
+  <div class="section-header reveal">
+    <div class="section-label">◆ Berry's Menu ◆</div>
+    <h2 class="section-title">كاندي بار 🎀</h2>
+    <div class="section-line"></div>
+    <p style="color:var(--text-muted);font-size:14px;margin-top:20px;line-height:2;text-align:center;">
+      صمّم كاندي بار حلمك من منتجاتنا الطازجة<br>
+      <span style="color:var(--gold-light);font-weight:700;">✦ 25 شخص — اختر 3 آيتمات — 75,000 د.ع ✦</span><br>
+      <span style="color:var(--gold-light);font-weight:700;">✦ 50 شخص — اختر 5 آيتمات — 150,000 د.ع ✦</span>
+    </p>
+  </div>
+
+  <div style="overflow-x:auto;margin-bottom:32px;">
+    <table class="candy-table">
+      <thead>
+        <tr>
+          <th>المنتج</th>
+          <th>25 شخص</th>
+          <th>50 شخص</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>🧁 مادلين</td><td>24 قطعة</td><td>32 قطعة</td></tr>
+        <tr><td>🫐 تارت</td><td>40 قطعة</td><td>60 قطعة</td></tr>
+        <tr><td>🍩 ميني دونات</td><td>20 قطعة</td><td>30 قطعة</td></tr>
+        <tr><td>🍡 كيك بوب</td><td>25 قطعة</td><td>35 قطعة</td></tr>
+        <tr><td>🧊 آيس كيك</td><td>15 قطعة</td><td>20 قطعة</td></tr>
+        <tr><td>🎂 ميني كيك تمر</td><td>25 قطعة</td><td>35 قطعة</td></tr>
+        <tr><td>🍰 كاسات تشيز كيك</td><td>20 قطعة</td><td>24 قطعة</td></tr>
+        <tr><td>🌸 كيك الورد</td><td>10 قطع</td><td>12 قطعة</td></tr>
+        <tr><td>🧁 كب كيك الورد</td><td>15 قطعة</td><td>18 قطعة</td></tr>
+        <tr><td>🟢 تشيز كيك بستاشيو</td><td>16 قطعة</td><td>20 قطعة</td></tr>
+        <tr><td>🍫 تمر محشي بالشوكلاتة</td><td>1 كيلو</td><td>1.5 كيلو</td></tr>
+        <tr><td>🌹 كاسات كيك بالورد</td><td>18 قطعة</td><td>25 قطعة</td></tr>
+        <tr><td>🍫 براونيز</td><td>24 قطعة</td><td>36 قطعة</td></tr>
+        <tr><td>🍓 فراولة بالككو</td><td>30 قطعة</td><td>40 قطعة</td></tr>
+        <tr><td>🍋 ميني كيك ليمون</td><td>24 قطعة</td><td>32 قطعة</td></tr>
+        <tr><td>☕ كاسات تيراميسو</td><td>15 قطعة</td><td>25 قطعة</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="grid">
+    <!-- 25 شخص -->
+    <div class="card reveal" style="border:2px solid rgba(184,152,58,0.4);">
+      <div style="background:linear-gradient(135deg,#3D3D1E,#2a2a10);padding:32px 20px;text-align:center;">
+        <div style="font-size:44px;margin-bottom:10px;">🎀</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--gold-light);font-style:italic;">كاندي بار</div>
+        <div style="font-size:20px;font-weight:700;color:var(--cream);margin-top:6px;">25 شخص</div>
+      </div>
+      <div class="card-body">
+        <div style="background:rgba(184,152,58,0.08);border:1px solid var(--border);border-radius:12px;padding:18px;margin-bottom:16px;text-align:center;">
+          <div style="font-size:13px;color:var(--text-muted);margin-bottom:6px;">حرية اختيار</div>
+          <div style="font-size:32px;font-weight:800;color:var(--olive-mid);">3 آيتمات</div>
+          <div style="font-size:12px;color:var(--text-muted);margin-top:4px;">من القائمة أعلاه</div>
+        </div>
+        <div class="card-divider"></div>
+        <div class="price-row" style="justify-content:center;margin-bottom:16px;">
+          <span style="font-size:30px;font-weight:800;color:var(--olive-mid);">75,000 <span style="font-size:14px;color:var(--text-muted);">د.ع</span></span>
+        </div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
+      </div>
+    </div>
+
+```
+<!-- 50 شخص -->
+<div class="card reveal" style="border:2px solid rgba(184,152,58,0.6);">
+  <div style="background:linear-gradient(135deg,#4A4A2A,#3D3D1E);padding:32px 20px;text-align:center;position:relative;">
+    <div style="position:absolute;top:14px;right:14px;background:var(--gold);color:var(--dark);font-size:10px;font-weight:700;padding:4px 12px;border-radius:20px;">⭐ الأكثر طلباً</div>
+    <div style="font-size:44px;margin-bottom:10px;">🎊</div>
+    <div style="font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--gold-light);font-style:italic;">كاندي بار</div>
+    <div style="font-size:20px;font-weight:700;color:var(--cream);margin-top:6px;">50 شخص</div>
+  </div>
+  <div class="card-body">
+    <div style="background:rgba(184,152,58,0.12);border:1px solid rgba(184,152,58,0.4);border-radius:12px;padding:18px;margin-bottom:16px;text-align:center;">
+      <div style="font-size:13px;color:var(--text-muted);margin-bottom:6px;">حرية اختيار</div>
+      <div style="font-size:32px;font-weight:800;color:var(--olive-mid);">5 آيتمات</div>
+      <div style="font-size:12px;color:var(--text-muted);margin-top:4px;">من القائمة أعلاه</div>
+    </div>
+    <div class="card-divider"></div>
+    <div class="price-row" style="justify-content:center;margin-bottom:16px;">
+      <span style="font-size:30px;font-weight:800;color:var(--olive-mid);">150,000 <span style="font-size:14px;color:var(--text-muted);">د.ع</span></span>
+    </div>
+    <div class="btn-row">
+      <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+      <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+    </div>
+  </div>
+</div>
+```
+
+  </div>
+</div>
+
 <!-- FOOTER -->
+
 <footer class="footer">
   <div class="footer-brand">Berry's</div>
   <div class="footer-tagline">MADE WITH LOVE</div>
@@ -1224,7 +1086,7 @@
       </svg>
       @BERRY._323
     </a>
-    <a href="https://wa.me/message/6YMEQVWPHD3EK1" target="_blank" class="footer-wa">
+    <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="footer-wa">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
       </svg>
@@ -1239,7 +1101,7 @@
     document.getElementById(id).scrollIntoView({behavior:'smooth'});
   }
 
-  const sectionIds = ['sec-layer','sec-cookies','sec-brownies','sec-puff','sec-tiramisu','sec-cheesecake','sec-bigcakes','sec-mini','sec-hala','sec-other','sec-events'];
+  const sectionIds = ['sec-layer','sec-cookies','sec-brownies','sec-puff','sec-tiramisu','sec-cheesecake','sec-bigcakes','sec-mini','sec-hala','sec-other','sec-events','sec-candy'];
   const navBtns = document.querySelectorAll('.nav-btn');
 
   window.addEventListener('scroll', () => {
@@ -1258,5 +1120,6 @@
   }, { threshold: 0.08 });
   document.querySelectorAll('.reveal').forEach(r => observer.observe(r));
 </script>
+
 </body>
 </html>
