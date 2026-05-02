@@ -316,8 +316,44 @@ text-decoration:none; transition:background 0.2s;
 .event-grid { grid-template-columns:repeat(2,1fr); }
 .ig-float { left:90px; }
 }
-</style>
 
+/* ═══ FIX: كل نصوص الكاردات تبين واضحة ═══ */
+a { color:inherit; text-decoration:none; }
+.card, .card * { color:#2a2010; }
+.card .card-name { color:#1a1005; font-weight:700; }
+.card .price-val { color:#3D3D1E; font-weight:700; }
+.card .price-label { color:#6b5f2e; }
+.card .price-unit { color:#8A8660; }
+.card .tag { color:#3D3D1E; background:rgba(74,74,42,0.12); border:1px solid rgba(74,74,42,0.3); }
+.card .card-divider { background:rgba(74,66,32,0.25); }
+.card .section-label { color:#B8983A; }
+.card-body .order-btn { color:#F5F0E8 !important; }
+.card-body .order-btn-wa { color:#ffffff !important; }
+.event-size-box .sz { color:#2a2010; }
+.event-size-box .pr { color:#6b5f2e; }
+.event-size-box { background:rgba(74,74,42,0.1); border:1px solid rgba(74,74,42,0.25); }
+.candy-table td:first-child { color:#1a1005; }
+.candy-table td:not(:first-child) { color:#3D3D1E; }
+.candy-table th { color:#F5F0E8; }
+.section-title { color:#F5F0E8; }
+.section-label { color:#B8983A; }
+
+/* الزر اطلب هسه */
+.order-btn {
+background:#3D3D1E !important;
+color:#F5F0E8 !important;
+}
+.order-btn:hover { background:#4A4A2A !important; }
+
+/* لوغو بيري واضح */
+.logo-circle {
+background: radial-gradient(circle at 40% 35%, #FAF6E8, #D4B870) !important;
+box-shadow: 0 20px 80px rgba(0,0,0,0.5), 0 0 0 2px rgba(184,152,58,0.5) !important;
+}
+.logo-circle .brand { color:#2a2010 !important; font-weight:600; }
+.logo-circle .tagline-en { color:#4A4A2A !important; }
+
+</style>
 </head>
 <body>
 
