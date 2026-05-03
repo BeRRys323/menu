@@ -1098,17 +1098,52 @@ box-shadow: 0 20px 80px rgba(0,0,0,0.5), 0 0 0 2px rgba(184,152,58,0.5) !importa
 
   <div class="grid">
     <!-- 25 شخص -->
-    <div class="card reveal" style="border:2px solid rgba(184,152,58,0.4);">
-      <div style="background:linear-gradient(135deg,#3D3D1E,#2a2a10);padding:32px 20px;text-align:center;">
-        <div style="font-size:44px;margin-bottom:10px;"<div class="card-ph" style="height: 220px; padding: 0;">
-  <div class="slider-container" style="width: 100%; height: 220px; position: relative; overflow: hidden; border-radius: 8px;">
+    <div class="card reveal" style="border: 2px solid rgba(184, 152, 58, 0.4); border-radius: 12px; overflow: hidden; background: #fff; height: 100%; display: flex; flex-direction: column;">
+    
+    <div class="card-ph" style="height: 250px; padding: 0; position: relative; overflow: hidden;">
         <style>
-            @keyframes candyNewSlide {
+            @keyframes candyMultiSlide {
                 0%, 16% { opacity: 1; }
                 20%, 96% { opacity: 0; }
                 100% { opacity: 1; }
             }
-            .slide-img-candy-new {
+            .slide-img-candy {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover; /* لملء الفراغ تماماً مثل باقي الكروت */
+                opacity: 0;
+                animation: candyMultiSlide 15s infinite;
+            }
+            .cnd-img1 { animation-delay: 0s; opacity: 1; }
+            .cnd-img2 { animation-delay: 3s; }
+            .cnd-img3 { animation-delay: 6s; }
+            .cnd-img4 { animation-delay: 9s; }
+            .cnd-img5 { animation-delay: 12s; }
+        </style>
+        <img src="Candyy.jpeg" class="slide-img-candy cnd-img1" alt="كاندي بار 1">
+        <img src="كاندي بار٣.jpeg" class="slide-img-candy cnd-img2" alt="كاندي بار 2">
+        <img src="كاندي بار ٦.jpeg" class="slide-img-candy cnd-img3" alt="كاندي بار 3">
+        <img src="كاندي بار٧.jpeg" class="slide-img-candy cnd-img4" alt="كاندي بار 4">
+        <img src="كاندي بار٨.jpeg" class="slide-img-candy cnd-img5" alt="كاندي بار 5">
+    </div>
+    
+    <div class="card-body" style="padding: 15px; text-align: center; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+            <div style="font-size: 18px; font-weight: 700; color: #333; margin-bottom: 5px;">كاندي بار متنوع</div>
+            <div style="font-size: 14px; color: #666; margin-bottom: 10px;">عروض خاصة للجمعات</div>
+        </div>
+        
+        <div>
+            <div class="price-row" style="font-size: 20px; font-weight: 800; color: var(--olive-mid); margin-bottom: 15px;">يحدد حسب الطلب</div>
+            
+            <div class="btn-row" style="display: flex; gap: 10px; justify-content: center;">
+                <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa" style="background: #25D366; color: #fff; padding: 8px 15px; border-radius: 6px; text-decoration: none; font-size: 14px; width: 100%;">استفسار الآن</a>
+            </div>
+        </div>
+    </div>
+</div>
+
                 position: absolute;
                 width: 100%;
                 height: 100%;
