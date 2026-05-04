@@ -1148,7 +1148,8 @@ background:#F0EAD8 !important;
     <div class="card reveal" style="border:2px solid rgba(184,152,58,0.4);">
       <div style="background:linear-gradient(135deg,#3D3D1E,#2a2a10);padding:32px 20px;text-align:center;">
         <div class="card reveal" style="border: 2px solid rgba(184, 152, 58, 0.4); border-radius: 12px; overflow: hidden; background: #fff; height: 100%; display: flex; flex-direction: column;">
-        <div class="card-ph" style="height: 250px; padding: 0; position: relative; overflow: hidden;">
+        <div class="card-ph">
+        <div class="slider-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; border-radius: 8px;">
         <style>
             @keyframes candyMultiSlide {
                 0%, 16% { opacity: 1; }
@@ -1159,22 +1160,23 @@ background:#F0EAD8 !important;
                 position: absolute;
                 width: 100%;
                 height: 100%;
-                object-fit: cover; /* لملء الفراغ تماماً مثل باقي الكروت */
+                object-fit: cover;
                 opacity: 0;
                 animation: candyMultiSlide 15s infinite;
             }
-            .cnd-img1 { animation-delay: 0s; opacity: 1; }
-            .cnd-img2 { animation-delay: 3s; }
-            .cnd-img3 { animation-delay: 6s; }
-            .cnd-img4 { animation-delay: 9s; }
-            .cnd-img5 { animation-delay: 12s; }
+            .candy-img1 { animation-delay: 0s; opacity: 1; }
+            .candy-img2 { animation-delay: 3s; }
+            .candy-img3 { animation-delay: 6s; }
+            .candy-img4 { animation-delay: 9s; }
+            .candy-img5 { animation-delay: 12s; }
         </style>
-        <img src="Candyy.jpeg" class="slide-img-candy cnd-img1" alt="كاندي بار 1">
-        <img src="كاندي بار٣.jpeg" class="slide-img-candy cnd-img2" alt="كاندي بار 2">
-        <img src="كاندي بار ٦.jpeg" class="slide-img-candy cnd-img3" alt="كاندي بار 3">
-        <img src="كاندي بار٧.jpeg" class="slide-img-candy cnd-img4" alt="كاندي بار 4">
-        <img src="كاندي بار٨.jpeg" class="slide-img-candy cnd-img5" alt="كاندي بار 5">
- </div> 
+        <img src="Candy.jpeg" class="slide-img-candy candy-img1" alt="كاندي بار 1">
+        <img src="كاندي بار.jpeg" class="slide-img-candy candy-img2" alt="كاندي بار 2">
+        <img src="كاندي بار٤.jpeg" class="slide-img-candy candy-img3" alt="كاندي بار 3">
+        <img src="كاندي بار٥٥.jpeg" class="slide-img-candy candy-img4" alt="كاندي بار 4">
+        <img src="كاندي بار٢.jpeg" class="slide-img-candy candy-img5" alt="كاندي بار 5">
+    </div>
+</div> 
     <div class="card-body" style="padding: 15px; text-align: center; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
         <div>
             <div style="font-size: 18px; font-weight: 700; color: #333; margin-bottom: 5px;">كاندي بار متنوع</div>
