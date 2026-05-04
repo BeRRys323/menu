@@ -332,9 +332,9 @@ a { color:inherit; text-decoration:none; }
 .event-size-box .sz { color:#2a2010; }
 .event-size-box .pr { color:#6b5f2e; }
 .event-size-box { background:rgba(74,74,42,0.1); border:1px solid rgba(74,74,42,0.25); }
-.candy-table td:first-child { color:#1a1005; }
-.candy-table td:not(:first-child) { color:#3D3D1E; }
-.candy-table th { color:#F5F0E8; }
+.candy-table td:first-child { color:#1a1005 !important; font-weight:700; }
+.candy-table td:not(:first-child) { color:#1a1005 !important; font-weight:600; }
+.candy-table th { color:#ffffff !important; }
 .section-title { color:#F5F0E8; }
 .section-label { color:#B8983A; }
 
@@ -352,6 +352,77 @@ box-shadow: 0 20px 80px rgba(0,0,0,0.5), 0 0 0 2px rgba(184,152,58,0.5) !importa
 }
 .logo-circle .brand { color:#2a2010 !important; font-weight:600; }
 .logo-circle .tagline-en { color:#4A4A2A !important; }
+
+/* إصلاح شامل للجدول */
+.candy-table { background:#FFF8F0 !important; }
+.candy-table td { color:#1a1005 !important; font-weight:600; }
+.candy-table th { color:#ffffff !important; background:var(–olive-mid); }
+
+/* إصلاح شامل نهائي للصور */
+.slider-container {
+width:100% !important;
+height:240px !important;
+position:relative !important;
+overflow:hidden !important;
+display:block !important;
+}
+.slide-img-candy, .slide-img-candy-new {
+position:absolute !important;
+inset:0 !important;
+width:100% !important;
+height:100% !important;
+object-fit:cover !important;
+object-position:center !important;
+}
+.card-ph .slider-container {
+height:240px !important;
+border-radius:0 !important;
+}
+
+/* ════ FINAL FORCE FIX ════ */
+
+/* 1. صور الكاندي بار كاملة */
+.card-ph { overflow:hidden !important; padding:0 !important; }
+.card-ph .slider-container,
+div.slider-container {
+width:100% !important;
+height:240px !important;
+position:relative !important;
+overflow:hidden !important;
+display:block !important;
+margin:0 !important;
+padding:0 !important;
+}
+.slide-img-candy-new,
+.slide-img-candy {
+position:absolute !important;
+top:0 !important; left:0 !important;
+width:100% !important;
+height:100% !important;
+object-fit:cover !important;
+}
+
+/* 2. نصوص جدول الكاندي بار سوداء واضحة */
+table.candy-table,
+.candy-table {
+background:#FFF8F0 !important;
+}
+.candy-table thead th {
+background:#4A4A2A !important;
+color:#ffffff !important;
+font-weight:700 !important;
+}
+.candy-table tbody td {
+color:#1a1005 !important;
+font-weight:600 !important;
+font-size:14px !important;
+}
+.candy-table tbody tr {
+background:#FFF8F0 !important;
+}
+.candy-table tbody tr:nth-child(even) {
+background:#F0EAD8 !important;
+}
 
 </style>
 </head>
@@ -863,31 +934,7 @@ box-shadow: 0 20px 80px rgba(0,0,0,0.5), 0 0 0 2px rgba(184,152,58,0.5) !importa
 
 ```
 <div class="card reveal">
-  <div class="card-ph">
-    <div class="slider-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; border-radius: 8px;">
-        <style>
-            @keyframes madeleineSlide {
-                0% { opacity: 1; }
-                45% { opacity: 1; }
-                55% { opacity: 0; }
-                95% { opacity: 0; }
-                100% { opacity: 1; }
-            }
-            .slide-img-madeleine {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: opacity 1s ease-in-out;
-            }
-            .madeleine-img1 { animation: madeleineSlide 6s infinite; }
-            .madeleine-img2 { animation: madeleineSlide 6s infinite reverse; }
-        </style>
-        <img src="مادلين.jpeg" class="slide-img-madeleine madeleine-img1" alt="مادلين">
-        <img src="مادليين.jpeg" class="slide-img-madeleine madeleine-img2" alt="مادليين - خيار آخر">
-    </div>
-</div>
-
+  <div class="card-ph">🧁</div>
   <div class="card-body">
     <div class="card-name">مادلين كيك</div>
     <div class="card-divider"></div>
@@ -1098,129 +1145,35 @@ box-shadow: 0 20px 80px rgba(0,0,0,0.5), 0 0 0 2px rgba(184,152,58,0.5) !importa
 
   <div class="grid">
     <!-- 25 شخص -->
-    <div class="card reveal" style="border: 2px solid rgba(184, 152, 58, 0.4); border-radius: 12px; overflow: hidden; background: #fff; height: 100%; display: flex; flex-direction: column;">
-    
-    <div class="card-ph" style="height: 250px; padding: 0; position: relative; overflow: hidden;">
-        <style>
-            @keyframes candyMultiSlide {
-                0%, 16% { opacity: 1; }
-                20%, 96% { opacity: 0; }
-                100% { opacity: 1; }
-            }
-            .slide-img-candy {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                object-fit: cover; /* لملء الفراغ تماماً مثل باقي الكروت */
-                opacity: 0;
-                animation: candyMultiSlide 15s infinite;
-            }
-            .cnd-img1 { animation-delay: 0s; opacity: 1; }
-            .cnd-img2 { animation-delay: 3s; }
-            .cnd-img3 { animation-delay: 6s; }
-            .cnd-img4 { animation-delay: 9s; }
-            .cnd-img5 { animation-delay: 12s; }
-        </style>
-        <img src="Candyy.jpeg" class="slide-img-candy cnd-img1" alt="كاندي بار 1">
-        <img src="كاندي بار٣.jpeg" class="slide-img-candy cnd-img2" alt="كاندي بار 2">
-        <img src="كاندي بار ٦.jpeg" class="slide-img-candy cnd-img3" alt="كاندي بار 3">
-        <img src="كاندي بار٧.jpeg" class="slide-img-candy cnd-img4" alt="كاندي بار 4">
-        <img src="كاندي بار٨.jpeg" class="slide-img-candy cnd-img5" alt="كاندي بار 5">
-    </div>
-    
-    <div class="card-body" style="padding: 15px; text-align: center; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
-        <div>
-            <div style="font-size: 18px; font-weight: 700; color: #333; margin-bottom: 5px;">كاندي بار متنوع</div>
-            <div style="font-size: 14px; color: #666; margin-bottom: 10px;">عروض خاصة للجمعات</div>
+    <div class="card reveal" style="border:2px solid rgba(184,152,58,0.4);">
+      <div style="background:linear-gradient(135deg,#3D3D1E,#2a2a10);padding:32px 20px;text-align:center;">
+        <div style="font-size:44px;margin-bottom:10px;">🎀</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--gold-light);font-style:italic;">كاندي بار</div>
+        <div style="font-size:20px;font-weight:700;color:var(--cream);margin-top:6px;">25 شخص</div>
+      </div>
+      <div class="card-body">
+        <div style="background:rgba(184,152,58,0.08);border:1px solid var(--border);border-radius:12px;padding:18px;margin-bottom:16px;text-align:center;">
+          <div style="font-size:13px;color:var(--text-muted);margin-bottom:6px;">حرية اختيار</div>
+          <div style="font-size:32px;font-weight:800;color:var(--olive-mid);">3 آيتمات</div>
+          <div style="font-size:12px;color:var(--text-muted);margin-top:4px;">من القائمة أعلاه</div>
         </div>
-        
-        <div>
-            <div class="price-row" style="font-size: 20px; font-weight: 800; color: var(--olive-mid); margin-bottom: 15px;">يحدد حسب الطلب</div>
-            
-            <div class="btn-row" style="display: flex; gap: 10px; justify-content: center;">
-                <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa" style="background: #25D366; color: #fff; padding: 8px 15px; border-radius: 6px; text-decoration: none; font-size: 14px; width: 100%;">استفسار الآن</a>
-            </div>
+        <div class="card-divider"></div>
+        <div class="price-row" style="justify-content:center;margin-bottom:16px;">
+          <span style="font-size:30px;font-weight:800;color:var(--olive-mid);">75,000 <span style="font-size:14px;color:var(--text-muted);">د.ع</span></span>
         </div>
+        <div class="btn-row">
+          <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
+          <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+        </div>
+      </div>
     </div>
-</div>
-
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                opacity: 0;
-                animation: candyNewSlide 15s infinite;
-            }
-            .cnd-img1 { animation-delay: 0s; opacity: 1; }
-            .cnd-img2 { animation-delay: 3s; }
-            .cnd-img3 { animation-delay: 6s; }
-            .cnd-img4 { animation-delay: 9s; }
-            .cnd-img5 { animation-delay: 12s; }
-        </style>
-        <img src="Candyy.jpeg" class="slide-img-candy-new cnd-img1" alt="كاندي بار 1">
-        <img src="كاندي بار٣.jpeg" class="slide-img-candy-new cnd-img2" alt="كاندي بار 2">
-        <img src="كاندي بار ٦.jpeg" class="slide-img-candy-new cnd-img3" alt="كاندي بار 3">
-        <img src="كاندي بار٧.jpeg" class="slide-img-candy-new cnd-img4" alt="كاندي بار 4">
-        <img src="كاندي بار٨.jpeg" class="slide-img-candy-new cnd-img5" alt="كاندي بار 5">
-    </div>
-</div>
-
-```
-    <div style="font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--gold-light);font-style:italic;">كاندي بار</div>
-    <div style="font-size:20px;font-weight:700;color:var(--cream);margin-top:6px;">25 شخص</div>
-  </div>
-  <div class="card-body">
-    <div style="background:rgba(184,152,58,0.08);border:1px solid var(--border);border-radius:12px;padding:18px;margin-bottom:16px;text-align:center;">
-      <div style="font-size:13px;color:var(--text-muted);margin-bottom:6px;">حرية اختيار</div>
-      <div style="font-size:32px;font-weight:800;color:var(--olive-mid);">3 آيتمات</div>
-      <div style="font-size:12px;color:var(--text-muted);margin-top:4px;">من القائمة أعلاه</div>
-    </div>
-    <div class="card-divider"></div>
-    <div class="price-row" style="justify-content:center;margin-bottom:16px;">
-      <span style="font-size:30px;font-weight:800;color:var(--olive-mid);">75,000 <span style="font-size:14px;color:var(--text-muted);">د.ع</span></span>
-    </div>
-    <div class="btn-row">
-      <a href="https://instagram.com/berry._323" target="_blank" class="order-btn">📩 اطلب هسه</a>
-      <a href="https://wa.me/message/EUICHSAGX6PKI1" target="_blank" class="order-btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
-    </div>
-  </div>
-</div>
-```
 
 ```
 <!-- 50 شخص -->
 <div class="card reveal" style="border:2px solid rgba(184,152,58,0.6);">
   <div style="background:linear-gradient(135deg,#4A4A2A,#3D3D1E);padding:32px 20px;text-align:center;position:relative;">
     <div style="position:absolute;top:14px;right:14px;background:var(--gold);color:var(--dark);font-size:10px;font-weight:700;padding:4px 12px;border-radius:20px;">⭐ الأكثر طلباً</div>
-    <div class="card-ph">
-    <div class="slider-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; border-radius: 8px;">
-        <style>
-            @keyframes candyMultiSlide {
-                0%, 16% { opacity: 1; }
-                20%, 96% { opacity: 0; }
-                100% { opacity: 1; }
-            }
-            .slide-img-candy {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                opacity: 0;
-                animation: candyMultiSlide 15s infinite;
-            }
-            .candy-img1 { animation-delay: 0s; opacity: 1; }
-            .candy-img2 { animation-delay: 3s; }
-            .candy-img3 { animation-delay: 6s; }
-            .candy-img4 { animation-delay: 9s; }
-            .candy-img5 { animation-delay: 12s; }
-        </style>
-        <img src="Candy.jpeg" class="slide-img-candy candy-img1" alt="كاندي بار 1">
-        <img src="كاندي بار.jpeg" class="slide-img-candy candy-img2" alt="كاندي بار 2">
-        <img src="كاندي بار٤.jpeg" class="slide-img-candy candy-img3" alt="كاندي بار 3">
-        <img src="كاندي بار٥٥.jpeg" class="slide-img-candy candy-img4" alt="كاندي بار 4">
-        <img src="كاندي بار٢.jpeg" class="slide-img-candy candy-img5" alt="كاندي بار 5">
-    </div>
-</div>
+    <div style="font-size:44px;margin-bottom:10px;">🎊</div>
     <div style="font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--gold-light);font-style:italic;">كاندي بار</div>
     <div style="font-size:20px;font-weight:700;color:var(--cream);margin-top:6px;">50 شخص</div>
   </div>
@@ -1257,9 +1210,7 @@ box-shadow: 0 20px 80px rgba(0,0,0,0.5), 0 0 0 2px rgba(184,152,58,0.5) !importa
 
 ```
   <div class="card reveal">
-    <div class="card-ph">
-     <img src="هرم فواكه.jpeg" alt="هرم فواكه" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-</div>
+    <div class="card-ph">🍓🍊🍇</div>
     <div class="card-body">
       <div class="card-name">هرم الفواكة</div>
       <div class="card-divider"></div>
@@ -1289,9 +1240,7 @@ box-shadow: 0 20px 80px rgba(0,0,0,0.5), 0 0 0 2px rgba(184,152,58,0.5) !importa
   </div>
 
   <div class="card reveal">
-    <div class="card-ph">
-     <img src="هرم دونات.jpeg" alt="هرم دونات" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-</div>
+    <div class="card-ph">🍩</div>
     <div class="card-body">
       <div class="card-name">هرم دونات</div>
       <div class="card-divider"></div>
