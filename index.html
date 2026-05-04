@@ -934,7 +934,26 @@ background:#F0EAD8 !important;
 
 ```
 <div class="card reveal">
-  <div class="card-ph">🧁</div>
+  <div class="card-ph" style="height: 280px; position: relative; overflow: hidden; border-radius: 12px; margin-bottom: 10px;">
+    <style>
+        @keyframes madeleineFade {
+            0%, 45% { opacity: 1; }
+            55%, 100% { opacity: 0; }
+        }
+        .slide-madeleine {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .madeleine-img2 {
+            animation: madeleineFade 6s infinite alternate;
+        }
+    </style>
+    <img src="مادلين.jpeg" class="slide-madeleine" alt="مادلين 1">
+    <img src="مادليين.jpeg" class="slide-madeleine madeleine-img2" alt="مادلين 2">
+</div>
+
   <div class="card-body">
     <div class="card-name">مادلين كيك</div>
     <div class="card-divider"></div>
